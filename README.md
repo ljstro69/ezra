@@ -49,3 +49,7 @@ The contact form currently uses a `mailto:` action so it works without a form se
 - Tanya: tanya@ezrarealestatesolutions.com
 - Ken: ken@ezrarealestatesolutions.com
 - Jordan: jordan@ezrarealestatesolutions.com
+
+
+## Interior page spacing refinement
+This release reduces oversized headings and whitespace on About, How We Help, Stories, Stewards, Promise and Contact pages. Homepage hero layout and imagery are unchanged.
