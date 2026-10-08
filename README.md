@@ -53,3 +53,6 @@ The contact form currently uses a `mailto:` action so it works without a form se
 
 ## Interior page spacing refinement
 This release reduces oversized headings and whitespace on About, How We Help, Stories, Stewards, Promise and Contact pages. Homepage hero layout and imagery are unchanged.
+
+## Contact form (Formspree)
+The Contact page sends form submissions to `https://formspree.io/f/mzedrkag` via HTTPS using FormData and displays success/error feedback. Formspree is configured to send notifications to `info@ezrarealestatesolutions.com`. After deploying, submit a test message and verify both the confirmation on the site and delivery to Google Workspace (also check Spam). Formspree settings, notification routing, and spam controls are managed in the Formspree dashboard.
