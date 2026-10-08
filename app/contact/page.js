@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { PageShell } from '../components';
 
-const FORM_ENDPOINT = 'https://formspree.io/f/mzedrkag';
+const FORM_ENDPOINT = 'https://formspree.io/f/mzedrkaq';
 
 export default function Contact() {
   const [status, setStatus] = useState('idle');
