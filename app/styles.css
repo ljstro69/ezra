@@ -86,3 +86,23 @@ main > .section:not(.hero) {
   main > .section:not(.hero) { padding: 36px 22px 48px; }
   .contact-grid { gap: 22px; }
 }
+
+
+/* Final October 2026 interior polish; homepage, photos and copy unchanged. */
+@media (min-width: 981px) {
+  .page-hero h1 { font-size: clamp(2.35rem, 3.35vw, 3.7rem); max-width: 1050px; }
+  .solution-list h2, .steward-list h2, .prose h2 { font-size: clamp(2rem, 3vw, 3.05rem); }
+}
+.prose h2 { line-height: 1.15; margin-bottom: .75rem; }
+.prose h2 + p { margin-top: 0; }
+.promise-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; background: transparent; margin: 2.3rem 0 .5rem; }
+.promise-grid b { display: flex; align-items: center; min-height: 116px; padding: 1.45rem 1.5rem; border: 1px solid var(--line); border-left: 4px solid var(--gold); line-height: 1.55; font-size: 1rem; }
+.contact-grid aside a { text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; overflow-wrap: anywhere; }
+.contact-grid aside a:hover { color: #9a681e; }
+.contact-privacy { margin: -.25rem 0 0; font-size: .88rem; color: #4b5660; }
+@media (max-width: 980px) { .promise-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 650px) {
+  .promise-grid { grid-template-columns: 1fr; gap: 10px; }
+  .promise-grid b { min-height: 0; padding: 1.1rem 1.2rem; }
+  .page-hero h1 { overflow-wrap: break-word; }
+}

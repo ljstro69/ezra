@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { PageShell } from '../components';
 
-const FORM_ENDPOINT = 'https://formspree.io/f/mzedrkaq';
+const FORM_ENDPOINT = 'https://formspree.io/f/mzedrkag';
 
 export default function Contact() {
   const [status, setStatus] = useState('idle');
@@ -53,6 +53,7 @@ export default function Contact() {
                 {status === 'error' && (
                   <p role="alert">We couldn't send your message right now. Please try again, or email info@ezrarealestatesolutions.com directly.</p>
                 )}
+                <p className="contact-privacy">We use the information you provide to respond to your inquiry.</p>
                 <button className="btn primary" type="submit" disabled={status === 'sending'}>
                   {status === 'sending' ? 'Sending…' : 'Send Message'}
                 </button>
@@ -61,8 +62,8 @@ export default function Contact() {
           </form>
           <aside>
             <h2>Get in Touch</h2>
-            <p><b>Phone:</b><br />{process.env.NEXT_PUBLIC_PHONE || '520-399-6570'}</p>
-            <p><b>Email:</b><br />{process.env.NEXT_PUBLIC_EMAIL || 'info@ezrarealestatesolutions.com'}</p>
+            <p><b>Phone:</b><br /><a href="tel:+15203996570">520-399-6570</a></p>
+            <p><b>Email:</b><br /><a href="mailto:info@ezrarealestatesolutions.com">info@ezrarealestatesolutions.com</a></p>
             <p><b>Service Area:</b><br />Arizona</p>
             <p>We are here to listen, explain your options clearly, and help you determine the best path forward—without pressure or judgment.</p>
           </aside>
